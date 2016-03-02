@@ -146,10 +146,6 @@ static WCGitTagsPlugin *sharedPlugin;
 
 - (void)presentTagsModal:(id)sender {
     
-    if (self.tagsWindow.screen) {
-        return;
-    }
-    
     GTRepository *repo = [self repositoryAtURL:[self currentDirectoryPath]];
     
     if (repo) {
